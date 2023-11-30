@@ -25,3 +25,4 @@ let stringNu = 33;
 let stringValue = String(stringNu);
 console.log(stringValue);
 console.log(typeof stringValue);
+console.log(+true);
