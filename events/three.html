@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body>
+    <h1>Lobo | Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    let interval;
+    const printMe = function () {
+      console.log("Lobo");
+    };
+    document.querySelector("#start").addEventListener("click", function () {
+      interval = setInterval(printMe, 1000);
+    });
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(interval);
+    });
+  </script>
+</html>
